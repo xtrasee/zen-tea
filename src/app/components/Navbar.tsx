@@ -2,13 +2,14 @@ import React from 'react';
 import Menu from './Menu';
 import Link from "next/link";
 import Image from 'next/image';
+import MenuPage from '../menu/page';
 
 const Navbar = () => {
     return (
         <div className='h-12 p-4 flex justify-between items-center border-b-2 border-b-orange-200 md:h-24 lg:px-20 xl:px-40'>
             <div className='hidden md:flex gap-4 flex-1'>
                 <Link href='/'>Home</Link>
-                <Link href='/Menu'>Menu</Link>
+                <Link href='/menu'>Menu</Link>
                 <Link href='/'>Contact</Link>
             </div>
             {/* logo */}

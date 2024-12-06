@@ -14,10 +14,10 @@ const Featured = () => {
                     {/* img container */}
                         <div className='relative flex-1 w-full hover:animate-shake'>
                               <Image
-                                  src={item.img}
+                                  src={item.img as string}
                                   alt=""
-                                  fill
                                   className="object-contain"
+                                  fill
                               />
                         </div>
                     {/* text */}
