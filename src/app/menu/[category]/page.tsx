@@ -12,7 +12,7 @@ const CategoryPage = () => {
           href={`/product/$(item.id)`}
           key={item.id}>
           {item.img && (
-            <div className="relative h-[80%]">
+            <div className="relative h-[90%] lg:h-full">
               <Image src={item.img} alt="" fill></Image>
             </div>
           )}

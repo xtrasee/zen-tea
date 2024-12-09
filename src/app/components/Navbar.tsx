@@ -2,7 +2,6 @@ import React from 'react';
 import Menu from './Menu';
 import Link from "next/link";
 import Image from 'next/image';
-import MenuPage from '../menu/page';
 
 const Navbar = () => {
     return (
@@ -16,7 +15,6 @@ const Navbar = () => {
             <div className='md:flex items-center justify-center flex-1'>
                 <Link href="/">
                     <Image src="/zen.png" alt="Logo" width={90} height={90}/>
-                    
                 </Link>
             </div>
             {/* mobile menu */}

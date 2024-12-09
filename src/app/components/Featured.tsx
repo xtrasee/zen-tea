@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { featuredProducts } from '../data'
+import Link from 'next/link'
 
 const Featured = () => {
   return (
@@ -24,8 +25,10 @@ const Featured = () => {
                         <div className='flex-1 flex flex-col items-center justify-center text-center gap-4'>
                             <h1 className='text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl'>{item.title}</h1>
                             <p className='p-4 2xl:p-8'>{item.desc}</p>
-                            <span className='text-xl font-bold'>${item.price}</span>
-                            <button className='bg-orange-300 p-2 rounded-md'>Add to Cart</button>
+                              <span className='text-xl font-bold'>${item.price}</span>
+                              <Link href="/menu">
+                              <button className='bg-orange-300 p-2 rounded-md'>Add to Cart</button>
+                            </Link>
                         </div>
                     </div>
                   ))
