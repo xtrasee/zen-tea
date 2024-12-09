@@ -14,6 +14,7 @@ const links = [
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const user = false;
 
     return (
         <div>
@@ -28,6 +29,13 @@ const Menu = () => {
                     {links.map(item => (
                         <Link href={item.url} key={item.id} onClick={() => setIsOpen(false)}>{item.title}</Link>
                     ))}
+
+                    <Link
+                    href={user ? "/orders" : "/login"}
+                    onClick={() => setIsOpen(false)}
+                    >
+                        {user ? "Orders" : "Login"}
+                    </Link>
 
                     <Link href="/cart" onClick={() => setIsOpen(false)}>
                         <Carticon />
