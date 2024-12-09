@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
 
             <div className='hidden md:flex justify-end flex-1'>
-                <Link href='/'>
+                <Link href='/cart'>
                     <Image src='/cart.png' alt='' width={20} height={20}></Image>
                 </Link>
             </div>
